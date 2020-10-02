@@ -5,21 +5,32 @@
   box-sizing: border-box;
 }
 
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+}
+
 /* regole di debug */
 [class*="col-"]{
-  height: 100px;
+  min-height: 100px;
   background-color: pink;
   border: 1px solid black;
 }
 
 section{
   margin-bottom: 40px;
-  background-color: #cecece;
+  /* background-color: #cecece; */
   border: 1px solid black;
 }
 
@@ -29,21 +40,58 @@ header {
   padding-top: 100px;
 }
 
+/* regole nav bar grande */
 #nav-large {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 900;
+  /* debug */
+  background-color: purple;
 }
 
+#nav-large .left-content{
+  width: 80%;
+  margin: 0 auto;
+  /* debug  */
+  border: 1px solid black;
+}
+
+#nav-large ul{
+  text-align: right;
+  /* debug */
+  border: 1px solid black;
+}
+
+#nav-large ul li{
+  display: inline-block;
+  margin-left:5px;
+}
+
+/* regole nav bar piccola */
 #nav-small {
   display: none;
 }
 
+/* regole jumbotron */
 #jumbo {
-  padding-top: 50px;
-  min-height: 300px;
+  padding-top: 300px;
+  background-image: url("../img/helbiz-unlimeted-monopattini.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#jumbo .jumbo-bottom-content{
+  width: 30%;
+  margin: 0 auto;
+}
+
+#jumbo .jumbo-bottom-content img{
+  width: 50%;
+  float: left;
 }
 
 /* regole main */
