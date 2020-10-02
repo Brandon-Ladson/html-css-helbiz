@@ -109,6 +109,28 @@ header{
   margin: 0 auto;
 }
 
+/* regole seconda sezione */
+.second-section{
+  background-image: url("../img/anziano.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.second-section .left-content{
+  padding-top: 500px;
+}
+
+.second-section .right-content{
+  padding-top: 500px;
+}
+
+.second-section img{
+  width: 70%;
+}
+
+
 /* regole footer */
 .centra-head-foot{
   padding: 0 10%;
