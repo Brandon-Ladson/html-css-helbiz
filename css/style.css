@@ -24,20 +24,23 @@ a{
 /* regole di debug */
 [class*="col-"]{
   min-height: 100px;
-  background-color: #cecece;
+  /* background-color: #cecece; */
   border: 1px solid black;
 }
 
 section{
   margin-bottom: 40px;
   /* background-color: #cecece; */
-  border: 1px solid black;
 }
 
 
 /* regole header */
 header{
   padding-top: 100px;
+}
+
+.centra-head-foot{
+  padding: 0 10%;
 }
 
 /* regole nav bar grande */
@@ -128,6 +131,41 @@ header{
 
 .second-section img{
   width: 70%;
+}
+
+/* regole terza sezione */
+.third-section{
+  text-align: center;
+  color: #fff;
+}
+
+/* parte superiore */
+.third-section .top-content{
+  background-image: url("../img/scooter.f0a0397.jpg");
+  background-size: cover;
+  padding-left: 70%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* parte sinistra inferiore */
+.third-section .left-bottom-content{
+  background-image: linear-gradient( #415669, #26313a);
+  padding-top: 100px;
+  height: 856px;
+}
+
+.third-section .left-bottom-content h1{
+  margin-bottom: 200px;
+}
+
+/* parte destra inferiore */
+.third-section .right-bottom-content{
+  background-image: url("../img/city.7c8c928.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 600px;
 }
 
 
