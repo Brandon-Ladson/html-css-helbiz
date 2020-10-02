@@ -11,11 +11,47 @@ img {
 }
 
 /* regole di debug */
+[class*="col-"]{
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
 
+section{
+  margin-bottom: 40px;
+  background-color: #cecece;
+  border: 1px solid black;
+}
 
 
 /* regole header */
+header {
+  padding-top: 100px;
+}
+
+#nav-large {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+#nav-small {
+  display: none;
+}
+
+#jumbo {
+  padding-top: 50px;
+  min-height: 300px;
+}
 
 /* regole main */
+.centra-sez1 {
+  padding: 0 5%;
+}
 
 /* regole footer */
+.centra-head-foot{
+  padding: 0 10%;
+}
