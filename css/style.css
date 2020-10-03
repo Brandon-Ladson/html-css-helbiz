@@ -168,6 +168,22 @@ header{
   padding-bottom: 600px;
 }
 
+/* regole quarta sezione */
+.fourth-section{
+  background-image: url("../img/pachwork.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 404px;
+  text-align: center;
+}
+
+.fourth-section .content{
+  background-color: #fff;
+}
+
+.fourth-section .content li{
+  display: inline-block;
+}
 
 /* regole footer */
 .centra-head-foot{
