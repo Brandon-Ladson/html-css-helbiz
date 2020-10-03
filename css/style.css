@@ -11,6 +11,11 @@
   clear: both;
 }
 
+body{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -22,21 +27,20 @@ a{
 }
 
 /* regole di debug */
-[class*="col-"]{
+/* [class*="col-"]{
   min-height: 100px;
-  /* background-color: #cecece; */
+  background-color: #cecece;
   border: 1px solid black;
-}
+} */
 
 section{
   margin-bottom: 40px;
-  /* background-color: #cecece; */
 }
 
 
 /* regole header */
 header{
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .centra-head-foot{
@@ -49,27 +53,28 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  height: 50px;
   z-index: 900;
-  /* debug */
-  background-color: purple;
+  background-color: #fff;
 }
 
 #nav-large .left-content{
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
-  /* debug  */
-  border: 1px solid black;
+}
+
+#nav-large .left-content img{
+  margin-top: 15px;
 }
 
 #nav-large ul{
   text-align: right;
-  /* debug */
-  border: 1px solid black;
+  line-height: 50px;
 }
 
 #nav-large ul li{
   display: inline-block;
-  margin-left:5px;
+  margin-left:10px;
 }
 
 /* regole nav bar piccola */
@@ -85,8 +90,25 @@ header{
   background-position: center;
   height: 100vh;
   text-align: center;
+  /* height: 600px; */
 }
 
+/* regole parte superiore */
+#jumbo .jumbo-top-content{
+  color: #fff;
+}
+
+#jumbo .jumbo-top-content h3{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#jumbo .jumbo-top-content .text{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* regole parte inferiore */
 #jumbo .jumbo-bottom-content{
   width: 30%;
   margin: 0 auto;
@@ -112,6 +134,33 @@ header{
   margin: 0 auto;
 }
 
+.first-section h1{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.first-section .text{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.first-section a{
+  color: #0007ff;
+  font-size: 1.2rem;
+}
+
+.first-section .left-content{
+  background-color: #fafafa;
+  margin-right: 10px;
+  padding-top: 40px;
+}
+
+.first-section .right-content{
+  background-color: #fafafa;
+  margin-left: 10px;
+    padding-top: 40px;
+}
+
 /* regole seconda sezione */
 .second-section{
   background-image: url("../img/anziano.jpg");
@@ -125,8 +174,12 @@ header{
   padding-top: 500px;
 }
 
+.second-section .left-content h1{
+  font-size: 2rem;
+}
+
 .second-section .right-content{
-  padding-top: 500px;
+  padding-top: 510px;
 }
 
 .second-section img{
@@ -143,20 +196,43 @@ header{
 .third-section .top-content{
   background-image: url("../img/scooter.f0a0397.jpg");
   background-size: cover;
-  padding-left: 70%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  height: 554px;
+  padding-top: 150px;
+  padding-left: 60%;
+}
+
+.third-section .top-content h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.third-section .top-content .text{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.third-section .top-content a{
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 /* parte sinistra inferiore */
 .third-section .left-bottom-content{
   background-image: linear-gradient( #415669, #26313a);
-  padding-top: 100px;
+  padding-top: 150px;
   height: 856px;
+  position: relative;
 }
 
 .third-section .left-bottom-content h1{
-  margin-bottom: 200px;
+  font-size: 3rem;
+}
+
+.third-section .left-bottom-content img{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 /* parte destra inferiore */
@@ -164,8 +240,12 @@ header{
   background-image: url("../img/city.7c8c928.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 600px;
+  height: 856px;
+  padding-top: 150px;
+}
+
+.third-section .right-bottom-content h1{
+  font-size: 3rem;
 }
 
 /* regole quarta sezione */
