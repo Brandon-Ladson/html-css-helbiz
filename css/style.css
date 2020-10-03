@@ -26,13 +26,6 @@ a{
   color: #000;
 }
 
-/* regole di debug */
-/* [class*="col-"]{
-  min-height: 100px;
-  background-color: #cecece;
-  border: 1px solid black;
-} */
-
 section{
   margin-bottom: 40px;
 }
@@ -90,12 +83,12 @@ header{
   background-position: center;
   height: 100vh;
   text-align: center;
-  /* height: 600px; */
 }
 
 /* regole parte superiore */
 #jumbo .jumbo-top-content{
   color: #fff;
+  font-size: 1.2rem;
 }
 
 #jumbo .jumbo-top-content h3{
@@ -293,25 +286,48 @@ header{
 /* regole footer */
 footer{
   color: #fff;
-  /* debug */
-  background-color: green;
+  background-color: #000;
 }
 
 .centra-head-foot{
   padding: 0 10%;
 }
 
-footer ul{
+footer .top-content{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+footer .top-content h2{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer .top-content .text{
+  color: #808080;
+}
+
+footer .central-content{
+  margin: 40px 0;
+}
+
+footer .central-content ul{
   text-align: center;
 }
 
-footer li{
+footer .central-content li{
   display: inline-block;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+footer .central-content [class*="fab"]{
+  color: #fff;
 }
 
 footer .bottom-content{
   width: 50%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 footer .bottom-content img{
