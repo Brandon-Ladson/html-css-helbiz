@@ -54,10 +54,7 @@ header{
 #nav-large .left-content{
   width: 50%;
   margin: 0 auto;
-}
-
-#nav-large .left-content img{
-  margin-top: 15px;
+  padding: 15px 0;
 }
 
 #nav-large ul{
@@ -68,6 +65,7 @@ header{
 #nav-large ul li{
   display: inline-block;
   margin-left:10px;
+  font-size: 0.9rem;
 }
 
 /* regole nav bar piccola */
