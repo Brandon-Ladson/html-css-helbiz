@@ -30,7 +30,6 @@ section{
   margin-bottom: 40px;
 }
 
-
 /* regole header */
 header{
   padding-top: 50px;
@@ -71,6 +70,19 @@ header{
 /* regole nav bar piccola */
 #nav-small{
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 900;
+  background-color: #fff;
+}
+
+#nav-small a{
+  color: #000;
+  font-size: 2rem;
+  line-height: 50px;
 }
 
 /* regole jumbotron */
@@ -149,7 +161,7 @@ header{
 .first-section .right-content{
   background-color: #fafafa;
   margin-left: 10px;
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 /* regole seconda sezione */
@@ -331,4 +343,211 @@ footer .bottom-content{
 footer .bottom-content img{
   width: 50%;
   float: left;
+}
+
+/* regole versione smartphone */
+@media all and (max-width: 768px){
+  /* regole nav bar grande */
+  #nav-large{
+    display: none;
+  }
+
+  #nav-large ul{
+    text-align: center;
+  }
+
+  #nav-large ul li{
+    display: none;
+    background-color: #fff;
+    border-top: 1px solid #cecece;
+  }
+
+  /* regole navbar piccola */
+  #nav-small{
+    display: block;
+  }
+
+  #nav-small a:hover #nav-large li{
+    display: block;
+  }
+
+  /* regole jumbotron */
+  #jumbo .jumbo-top-content{
+    font-size: 2.4rem;
+  }
+
+  #jumbo .jumbo-top-content h3{
+    font-size: 4rem;
+  }
+
+  /* regole prima sezione */
+  .first-section h1{
+    font-size: 3rem;
+  }
+
+  .first-section .text{
+    font-size: 2.4rem;
+  }
+
+  .first-section a{
+    font-size: 2.4rem;
+  }
+
+  .first-section .left-content{
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .first-section .right-content{
+    margin-left: 0;
+  }
+
+  /* regole seconda sezione */
+  .second-section{
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+  }
+
+  .second-section .left-content{
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .second-section .left-content h1{
+    font-size: 3rem;
+  }
+
+  .second-section .right-content{
+    padding-top: 20px;
+  }
+
+  .second-section .right-content h3{
+    font-size: 2rem;
+    color: #000;
+    background-color: #fff;
+  }
+
+  .second-section .right-content .text{
+    font-size: 2rem;
+    color: #000;
+    background-color: #fff;
+  }
+
+  .second-section img{
+    width: 50%;
+  }
+
+  /* regole terza sezione */
+  .third-section .top-content{
+    padding-top: 100px;
+    padding-left: 0;
+  }
+
+  .third-section .top-content h1{
+    font-size: 3rem;
+  }
+
+  .third-section .top-content .text{
+    font-size: 2rem;
+  }
+
+  .third-section .top-content a{
+    font-size: 2rem;
+  }
+
+  /* parte sinistra inferiore */
+  .third-section .left-bottom-content{
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .third-section .left-bottom-content a{
+    font-size: 2rem;
+  }
+
+  /* parte destra inferiore */
+  .third-section .right-bottom-content{
+    margin-left: 0;
+  }
+
+  .third-section .right-bottom-content a{
+    font-size: 2rem;
+  }
+
+  /* regole quarta sezione */
+  .fourth-section .content h1{
+    font-size: 3rem;
+  }
+
+  .fourth-section .content li{
+    font-size: 3rem;
+  }
+
+  /* regole foote */
+  footer{
+    text-align: center;
+  }
+
+  footer .top-content{
+    margin-top: 0px;
+  }
+
+  footer .top-content h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  footer .top-content .text{
+    font-size: 1.5rem;
+  }
+
+  footer .central-content{
+    margin-bottom: 20px;
+  }
+}
+
+/* regole tablet */
+@media all and (min-width: 769px) and (max-width: 992px){
+  /* regole nav bar grande */
+  #nav-large{
+    display: none;
+  }
+
+  #nav-large ul{
+    text-align: center;
+  }
+
+  #nav-large ul li{
+    display: none;
+    background-color: #fff;
+    border-top: 1px solid #cecece;
+  }
+
+  /* regole navbar piccola */
+  #nav-small{
+    display: block;
+  }
+
+  #nav-small a:hover #nav-large li{
+    display: block;
+  }
+
+  /* regole seconda sezione */
+  .second-section .left-content{
+    padding-top: 250px;
+  }
+
+  .second-section .right-content{
+    padding-top: 260px;
+  }
+
+  /* regole footer */
+  footer{
+    text-align: center;
+  }
+
+  footer .top-content{
+    margin-top: 0px;
+  }
 }
